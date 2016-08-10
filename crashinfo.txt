@@ -1,0 +1,102 @@
+StepMania5.0.11 crash report (build 9c6858f, 20160331 @ 02:03:00)
+--------------------------------------
+
+Crash reason: CustomLoadFunction not defined
+
+Thread: Main thread
+        Profile.cpp:2030 Loading the node that contains course scores.
+        Profile.cpp:2136 Loading the node that contains category scores.
+        Profile.cpp:2191 Loading the node containing screenshot data.
+        Profile.cpp:2225 Loading the node containing calorie data.
+        Profile.cpp:1056 CustomLoadFunction not defined
+Thread: Decode thread
+Thread: Mixer thread
+Thread: Music thread
+Thread: Worker thread (MemoryCardWorker)
+Thread: Worker thread (/@mc1int/)
+Thread: Worker thread (/@mc2int/)
+00423c0f: StepMania!00030000
+000beadd: StepMania!00030000
+002fa155: StepMania!00030000
+0020e55a: StepMania!00030000
+002f9118: StepMania!00030000
+00124ecc: StepMania!00030000
+004f7bf8: StepMania!00030000
+00124525: StepMania!00030000
+0022b02c: StepMania!00030000
+0035f5cd: StepMania!00030000
+000fd4e9: StepMania!00030000
+0011f472: StepMania!00030000
+000c5d82: StepMania!00030000
+004f8626: StepMania!00030000
+004f8626: StepMania!00030000
+00423aaa: StepMania!00030000
+00423756: StepMania!00030000
+004db7b7: StepMania!00030000
+7766ab5a: ntdll!RtlInitializeExceptionChain [77610000+5ab00+5a]
+
+Static log:
+StepMania5.0.11
+Compiled 20160331 @ 02:03:00 (build 9c6858f)
+Log starting 2016-07-23 22:16:14
+Loading window: win32
+Windows 6.2 (Win8) build 9200 []
+Memory: 4095mb total, 4095mb swap (4095mb swap avail)
+Video driver: NVIDIA GeForce GTX 960 [NVIDIA]
+              10.18.13.6822, 5-19-2016 [pci\ven_10de&dev_1401]
+Drive: "        KINGSTON SV300S3603A" Driver: storahci DMA: N/A
+Sound device 0: Headphones (High Definition Aud, 0.0, MID 1, PID 65535 
+Sound device 1: Digital Audio (S/PDIF) (High De, 0.0, MID 1, PID 65535 
+WARNING: Metric "Background::RandomBGStartBeat" is missing.
+WARNING: Metric "Background::RandomBGChangeMeasures" is missing.
+WARNING: Metric "Background::RandomBGChangesWhenBPMChangesAtMeasureStart" is missing.
+WARNING: Metric "Background::RandomBGEndsAtLastBeat" is missing.
+WARNING: Metric "Player::ComboBreakOnImmediateHoldLetGo" is missing.
+WARNING: Metric "ScreenGameplay::ForceImmediateFailForBattery" is missing.
+WARNING: Metric "ScreenEdit::RecordHoldTimeFormat" is missing.
+WARNING: Metric "ScreenSelectMusic::HardCommentMeter" is missing.
+WARNING: Metric "ScoreKeeperNormal::PercentScoreWeightCheckpointHit" is missing.
+WARNING: Metric "ScoreKeeperNormal::PercentScoreWeightW1" is missing.
+WARNING: Metric "ScoreKeeperNormal::PercentScoreWeightW2" is missing.
+WARNING: Metric "ScoreKeeperNormal::PercentScoreWeightW3" is missing.
+WARNING: Metric "ScoreKeeperNormal::PercentScoreWeightW4" is missing.
+WARNING: Metric "ScoreKeeperNormal::PercentScoreWeightW5" is missing.
+WARNING: Metric "ScoreKeeperNormal::PercentScoreWeightMiss" is missing.
+WARNING: Metric "ScoreKeeperNormal::PercentScoreWeightHitMine" is missing.
+WARNING: Metric "ScoreKeeperNormal::PercentScoreWeightCheckpointMiss" is missing.
+WARNING: Metric "ScoreKeeperNormal::PercentScoreWeightHeld" is missing.
+WARNING: Metric "ScoreKeeperNormal::PercentScoreWeightLetGo" is missing.
+WARNING: Metric "ScoreKeeperNormal::PercentScoreWeightMissedHold" is missing.
+WARNING: Metric "ScoreKeeperNormal::GradeWeightCheckpointHit" is missing.
+WARNING: Metric "ScoreKeeperNormal::GradeWeightW1" is missing.
+WARNING: Metric "ScoreKeeperNormal::GradeWeightW2" is missing.
+WARNING: Metric "ScoreKeeperNormal::GradeWeightW3" is missing.
+WARNING: Metric "ScoreKeeperNormal::GradeWeightW4" is missing.
+WARNING: Metric "ScoreKeeperNormal::GradeWeightW5" is missing.
+WARNING: Metric "ScoreKeeperNormal::GradeWeightMiss" is missing.
+WARNING: Metric "ScoreKeeperNormal::GradeWeightHitMine" is missing.
+WARNING: Metric "ScoreKeeperNormal::GradeWeightCheckpointMiss" is missing.
+WARNING: Metric "ScoreKeeperNormal::GradeWeightHeld" is missing.
+WARNING: Metric "ScoreKeeperNormal::GradeWeightLetGo" is missing.
+WARNING: Metric "ScoreKeeperNormal::GradeWeightMissedHold" is missing.
+WaveOut software mixing at 44100 hz
+Sound driver: WaveOut
+Lights driver: SystemMessage
+Lights driver: Export
+WARNING: Metric "Profile::CustomLoadFunction" is missing.
+Language: en
+Theme: default
+
+Partial log:
+00:16.916: RageSound: Load "/Themes/_fallback/Sounds/_missing.ogg" (precache: 1)
+00:16.916: RageSound: Load "/Themes/_fallback/Sounds/MemoryCardManager disconnect.ogg" (precache: 1)
+00:16.922: Starting thread: Worker thread (/@mc1int/)
+00:16.922: Starting thread: Worker thread (/@mc2int/)
+00:16.922: Profile::LoadAllFromDir( /Save/MachineProfile/ )
+00:16.923: Loading /Save/MachineProfile/Stats.xml
+00:16.924: Done.
+00:16.927: WARNING: Metric "Profile::CustomLoadFunction" is missing.
+00:16.927: Dialog: "Metric "Profile::CustomLoadFunction" is missing.  Correct this and click Retry, or Cancel to break." []
+00:17.055: Metric "Profile::CustomLoadFunction" could not be found in "Themes/default/metrics.ini" or "Themes/_fallback/metrics.ini".
+
+-- End of report
